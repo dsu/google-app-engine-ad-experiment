@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Badanie</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+	integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+
+
+<style>
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 60px; /* Margin bottom by footer height */
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Set the fixed height of the footer here */
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #f5f5f5;
+}
+</style>
+</head>
+<body>
+	<!-- 
+	  <p th:text="'Hello, ' + ${name} + '!'" />
+	 -->
+	<!-- Begin page content -->
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-10">
+				<article class="mb20">
+					<h1 class="size38">
+						<span class="black">Wypadek na budowie: trzy osoby nie żyją</span>
+					</h1>
+					<div class="articleDateContainer borderGreyBottom">
+						<time datetime="2010-07-13 12:06:00">
+							13 lipca 2010, <span class="pl5 grey_v6">12:06</span>
+						</time>
+						<div class="clearer"></div>
+					</div>
+					<h2 class="size18 mt10 mb15">
+						<span class="black"> Zmarła trzecia ofiara wypadku na
+							budowie w Zakopanem. Do tragedii doszło w czasie przebudowy
+							hotelu w Centralnym Ośrodku Sportu. Na pracujących na budowie
+							robotników spadł balkon i kawałek ściany. Informację o wypadku
+							dostaliśmy od naszego internauty na platformę Kontakt TVN24. </span>
+					</h2>
+
+
+					<div th:if="${ad}" style="text-align:center;margin:10px;">
+					
+					<span > <img
+						src="https://www.bannerserver.com/showcase/ban5.gif" />
+					</span> 
+					
+					
+					<span > <img
+						src="https://78.media.tumblr.com/9e7dbb7a732cc22e351b8aba3cdabfc4/tumblr_ou5posw6WW1w39ueyo2_400.gif" />
+						
+					</span>
+					
+					</div>
+
+
+					<p>Jak poinformował kpt. Marek Szydło z zakopiańskiej straży
+						pożarnej, do tragedii doszło około godziny 9 we wtorek.</p>
+					<p>Na robotników pracujących przy rozbiórce starego hotelu z
+						wysokości trzeciego piętra runął balkon. Ciężka płyta przygniotła
+						czterech mężczyzn. Żeby wydobyć poszkodowanych spod gruzów, straż
+						musiała użyć dźwigu.</p>
+					<p>Dwie osoby zginęły na miejscu. Trzecia ofiara zawalenia była
+						reanimowana. Mężczyzna w krytycznym stanie został przewieziony do
+						szpitala. Niestety, zmarł. - Mimo usilnych starań lekarzy,
+						mężczyzna zmarł na bloku operacyjnym - powiedziała dyrektor
+						Szpitala Powiatowego w Zakopanem, Regina Tokarz.</p>
+					<p>W wypadku lekko ranny został jeszcze jeden mężczyzna i
+						trafił do szpitala. Zdążył uciec przed walącą się ścianą i doznał
+						niewielkich obrażeń.</p>
+					<p>Wszystkie ofiary to młodzi ludzie, w wielu 18-23 lata. Nie
+						pochodzili z Zakopanego.</p>
+					<p>Strażacy zakończyli już przeszukiwanie gruzowiska. Nie
+						znaleźli kolejnych ofiar. - Liczba ofiar zgadza się z liczbą
+						robotników, którą podał kierownik budowy - dodał Szydło.</p>
+					<p>
+						<strong>Przyczyny nieznane</strong>
+					</p>
+
+
+					<div th:if="${ad}" style="text-align: center;">
+						<img src="https://media.giphy.com/media/LrmR9A1R6csRq/giphy.gif" />
+					</div>
+
+					<p></p>
+					<p>Jak informują strażacy, na razie jest za wcześnie, by mówić
+						o przyczynach tragedii. Miejsce wypadku zostało zabezpieczone,
+						cały czas pracuje tam policja. Są też inspektorzy nadzoru
+						budowlanego i prokuratura.</p>
+					<p>Przebudowa należącego do Centralnego Ośrodka Sportu hotelu w
+						Zakopanem rozpoczęła się w kwietniu. Miała kosztować ok. 22 mln
+						zł. Przetarg na modernizację hotelu COS Zakopane wygrało
+						konsorcjum budowlane z Warszawy. Budowa jest finansowana z
+						Funduszu Rozwoju Kultury Fizycznej.</p>
+					<p>Strażacy zakończyli już przeszukiwanie gruzowiska. Nie
+						znaleźli kolejnych ofiar. - Liczba ofiar zgadza się z liczbą
+						robotników, którą podał kierownik budowy - dodał Szydło.</p>
+					<p>
+						<strong>Dwa śmiertelne wypadki</strong>
+					</p>
+					<p>Zakres prac obejmuje między innymi rozbudowę sali
+						konferencyjnej, nadbudowę piętra, wymianę elewacji oraz
+						instalacji. Hotel ma zyskać także windy oraz większe pokoje dla
+						gości, nową część obejmującą odnowę biologiczną oraz salę
+						restauracyjną.</p>
+					<p>Przed rozpoczęciem modernizacji hotelu, władze
+						zakopiańskiego COS zapowiadały, że będzie to pierwszy obiekt w
+						Polsce posiadający pokoje hipobaryczne, w których za pomocą
+						specjalnych regulatorów składu powietrza będą stworzone warunki
+						imitujące pobyt na wysokości siedmiu tysięcy metrów nad poziomem
+						morza.</p>
+					<p>We wtorek na Podhalu doszło do innego śmiertelnego wypadku
+						na budowie. W miejscowości Dzianisz zginął robotnik pracujący przy
+						wykopach. Został przygnieciony.</p>
+					<p>jk/mtom</p>
+
+					<div class="clearer"></div>
+					<div class="articleAuthors mb30 mt5 grey_v6">Źródło: Kontakt
+						TVN24, TVN24, PAP</div>
+				</article>
+			</div>
+			<div class="col-md-2">
+				<div th:if="${ad}">
+					<img style="width:100%;min-width:350px;margin-top:200px;"
+						src="https://78.media.tumblr.com/tumblr_m8i6rmeQDH1r49l3lo1_500.gif" />
+
+					<img style="width:100%;min-width:350px; margin-top:900px;"
+						src="http://vbsoftwares.com/images/tumblr_lrzjg5o0O61r3dgmdo1_r1_500.gif" />
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">SWPS 2018</span>
+		</div>
+	</footer>
+</body>
+</html>
